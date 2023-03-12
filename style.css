@@ -138,3 +138,44 @@ ul, li {
       color: white;
       }
 }
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1.2em;
+    margin-bottom: -0.25em;
+  }
+
+  h2 {
+    font-size: 1em;
+    margin-bottom: 0.25em; 
+  }
+
+  .question-box {
+      font-size: 0.8em;
+      max-width: 90%;
+      padding: 10px;
+      margin-bottom: 1em;
+  }
+
+  .answers-box li {
+      border: 2px solid #FF8C00;
+      border-radius: 16px;
+      text-align: center;
+      font-size: 0.8em;
+      margin: 0.5em;
+      padding: 0.5em; 
+      transition: transform .15s;
+      color: white;
+      }
+}
+
+@media (max-width: 768px) {
+  .answers-box {
+    display: block;
+  }
+
+  .answers-box > li {
+    width: 100%;
+    margin: 6px 0;
+  }
+}
