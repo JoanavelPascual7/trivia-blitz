@@ -1,131 +1,140 @@
 body {
-    align-items: center;
-    border-left: 200px solid #235cc5;
-    border-right: 200px solid #235cc5;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Londrina Solid', sans-serif;
-    margin: 0;
-    min-height: 800px;
-    justify-content: center;
+  align-items: center;
+  border-left: 200px solid #235cc5;
+  border-right: 200px solid #235cc5;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Londrina Solid', sans-serif;
+  margin: 0;
+  min-height: 800px;
+  justify-content: center;
+  min-width: 320px;
+  max-width: 1440px;
 }
 
 h1, h2 {
-    color: #235cc5;
-    font-family: 'Titan One', serif;
+  color: #235cc5;
+  font-family: 'Titan One', serif;
 }
 
 p {
-    margin-block-start: 0;
-    margin-block-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 h1 {
-    font-size: 2em;
-    margin-bottom: -0.5em
-  }
-  
-  h2 {
-    font-size: 1.5em;
-    margin-bottom: -0.5em
-  }
-  
-  .question-box {
-    font-size: 1.7em;
-    max-width: 80%;
-  }
+  font-size: 2em;
+  margin-bottom: -0.5em
+}
 
-ul, li {
-    display: block;
-    list-style: none;
-    padding-inline-start: 0;
+h2 {
+  font-size: 1.5em;
+  margin-bottom: -0.5em
 }
 
 .question-box {
-    align-items: center;
-    background-color: #204fa5;
-    border-radius: 16px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.7em;
-    width: 70%;
-    max-width: 80%;
-    width: 100%;
-    padding: 20px;
-    margin-bottom: 20px
+  font-size: 1.7em;
+  max-width: 80%;
+}
+
+ul, li {
+  display: block;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.question-box {
+  align-items: center;
+  background-color: #204fa5;
+  border-radius: 16px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.7em;
+  width: 70%;
+  max-width: 80%;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px
 }
 
 .answers-box {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    width: 100%;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
 }
 
 .binary {
-    grid-template-rows: 100%;
+  grid-template-rows: 100%;
 }
 
 .answers-box > li {
-    border: 2px solid #fff;
-    border-radius: 16px;
-    text-align: center;
-    margin: 6px;
-    padding: 6px;
-    transition: transform .15s;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  text-align: center;
+  margin: 6px;
+  padding: 6px;
+  transition: transform .15s;
 }
 
 .answers-box li:hover {
-    background-color: #ddd;
-    cursor: pointer;
-    }
+  background-color: #ddd;
+  cursor: pointer;
+  }
 
 .answers-box li {
-    border: 6px solid darkorange;
-    }
+  border: 6px solid darkorange;
+  }
 
-    .red {
-        background-color: #e23;
-        color: white;
-        border: 2px solid #FF8C00;
-        }
+  .red {
+      background-color: #e23;
+      color: white;
+      border: 2px solid #FF8C00;
+      }
 
-     .green {
-        background-color: #0b0;
-        color: white;
-        border: 2px solid #FF8C00;
-        }
+   .green {
+      background-color: #0b0;
+      color: white;
+      border: 2px solid #FF8C00;
+      }
+
+.title-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  justify-content: center; 
+}
 
 @media (max-width: 768px) {
-    h1 {
-      font-size: 1.5em;
-      margin-bottom: -0.25em;
-    }
-  
-    h2 {
-      font-size: 1.2em;
-      margin-bottom: 0.25em; 
-    }
-  
-    .question-box {
-        font-size: 1em;
-        max-width: 90%;
-        padding: 10px;
-        margin-bottom: 1em;
-    }
-  
-    .answers-box li {
-        border: 2px solid #FF8C00;
-        border-radius: 16px;
-        text-align: center;
-        font-size: 1.2em;
-        margin: 0.5em;
-        padding: 0.5em; 
-        transition: transform .15s;
-        color: white;
-        }
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: -0.25em;
   }
+
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: 0.25em; 
+  }
+
+  .question-box {
+      font-size: 1em;
+      max-width: 90%;
+      padding: 10px;
+      margin-bottom: 1em;
+  }
+
+  .answers-box li {
+      border: 2px solid #FF8C00;
+      border-radius: 16px;
+      text-align: center;
+      font-size: 1.2em;
+      margin: 0.5em;
+      padding: 0.5em; 
+      transition: transform .15s;
+      color: white;
+      }
+}
